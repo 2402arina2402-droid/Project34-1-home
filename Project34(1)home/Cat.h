@@ -11,9 +11,14 @@ public:
 	Cat(string name, int age, string color) : Pet(name, age) {
 		this->color = color;
 	}
-	void ShowCat() {
-		cout << "CAT" << endl;
-		Show();
+	void Sound() override {
+		cout << "Meow!" << endl;
+	}
+	void Show() override {
+		Pet::Show();
 		cout << "Color: " << color << endl;
+	}
+	void Type() override {
+		cout << "Cat" << endl;
 	}
 };

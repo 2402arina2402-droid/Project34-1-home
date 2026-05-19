@@ -21,4 +21,14 @@ public:
 		cout << "Name: " << name << endl;
 		cout << "Age: " << age << endl;
 	}
+	virtual void Sound() {
+		cout << "Some sound" << endl; 
+	}
+	virtual void Show() {
+		cout << "Name : " << name << endl; 
+		cout << "Age: " << age << endl;
+	}
+	virtual void Type() {
+		cout << "Pet" << endl;
+	}
 };

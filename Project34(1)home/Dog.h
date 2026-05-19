@@ -12,9 +12,14 @@ public:
 	Dog(string name, int age, string breed) : Pet(name, age) {
 		this->breed = breed;
 	}
-	void ShowDog() {
-		cout << "DOG" << endl;
-		Show();
-		cout << "Breed: " << breed << endl;
+	void Sound() override {
+		cout << "Woof!" << endl;
+	}
+	void Show() override {
+		Pet::Show();
+		cout << "Breed: " << breed << endl; 
+	}
+	void Type() override {
+		cout << "Dog " << endl;
 	}
 };
